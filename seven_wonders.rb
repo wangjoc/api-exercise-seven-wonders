@@ -1,16 +1,21 @@
 require 'httparty'
+require 'awesome_print'
 
 #Starter Code:
 seven_wonders = ["Great Pyramid of Giza", "Hanging Gardens of Babylon", "Colossus of Rhodes", "Pharos of Alexandria", "Statue of Zeus at Olympia", "Temple of Artemis", "Mausoleum at Halicarnassus"]
 
-BASE_URL = "THE BASE URL FOR THE API REQUEST"
-key = "YOUR API TOKEN"
+BASE_URL = "https://us1.locationiq.com/v1/search.php"
+key = "da6565bd8527c5"
 
 seven_wonders_locations = seven_wonders.map do |wonder|
   # Code to discover the locations of each wonder.
-  
+  response = HTTParty.get("#{BASE_URL}?key=#{key}&q=#{wonder}&format=json")
+  response_data = JSON.parse(response.body)
+  sleep(1)
+  {lat: response_data.first["lat"], lon: response_data.first["lon"], name: wonder}
 end
 
+ap seven_wonders_locations
 
 
 
