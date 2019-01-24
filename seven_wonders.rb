@@ -17,10 +17,28 @@ end
 
 ap seven_wonders_locations
 
+ap "********"
 
+ap "Driving Directions from Cairo to The great pyramid"
 
+DRIVING_BASE_URL = "https://us1.locationiq.com/v1/directions/driving/"
+pyramid = {lon: 31.243666, lat: 30.048819}
+cairo = {lon: 27.4241280469557, lat: 37.03785995}
 
+response = HTTParty.get("#{DRIVING_BASE_URL}#{pyramid[:lon]},#{pyramid[:lat]};#{cairo[:lon]},#{cairo[:lat]}?key=#{key}")
 
+ap JSON.parse(response.body)
+
+locations = [{ lat: 38.8976998, lon: -77.0365534886228}, {lat: 48.4283182, lon: -123.3649533 }, { lat: 41.8902614, lon: 12.493087103595503}]
+
+REVERSE_LOOKUP_BASE = "https://us1.locationiq.com/v1/reverse.php"
+
+ap "Reverse look up locations"
+locations.each do |location|
+  response = HTTParty.get("#{REVERSE_LOOKUP_BASE}?key=#{key}&lat=#{location[:lat]}&lon=#{location[:lon]}&format=json")
+  ap JSON.parse(response.body)["display_name"]
+  sleep(1)
+end
 
 
 #Example Output:
