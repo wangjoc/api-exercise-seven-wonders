@@ -29,7 +29,7 @@ The second part will be understanding how to interact with the response data to 
 
 For an optional enhancement try to:
 
-- make a request for driving directions from Cairo Egypt to the Great Pyramid of Giza.  
+- Make a request for driving directions from Cairo Egypt to the Great Pyramid of Giza.  
 - Turn these locations into the names of places: [{ lat: 38.8976998, lon: -77.0365534886228}, {lat: 48.4283182, lon: -123.3649533 }, { lat: 41.8902614, lon: 12.493087103595503}]
 
 
