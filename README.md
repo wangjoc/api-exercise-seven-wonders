@@ -23,4 +23,12 @@ The second part will be understanding how to interact with the response data to 
 - Open the provided ruby file, `seven_wonders.rb`.
 - Use your developer skills to adventure through Google searches and the [Location IQ's documentation](https://locationiq.com/docs) to discover how to request the location of all the great wonders.
 
+
+## Optional Enhancement
+
+For an optional enhancement try to:
+
+- make a request for driving directions from Cairo Egypt to the Great Pyramid of Giza.  
+- Turn these locations into the names of places: [{ lat: 38.8976998, lon: -77.0365534886228}, {lat: 48.4283182, lon: -123.3649533 }, { lat: 41.8902614, lon: 12.493087103595503}]
+
 Safe travels!
