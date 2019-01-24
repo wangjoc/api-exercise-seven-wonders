@@ -3,6 +3,13 @@ require 'httparty'
 #Starter Code:
 seven_wonders = ["Great Pyramid of Giza", "Hanging Gardens of Babylon", "Colossus of Rhodes", "Pharos of Alexandria", "Statue of Zeus at Olympia", "Temple of Artemis", "Mausoleum at Halicarnassus"]
 
+BASE_URL = "THE BASE URL FOR THE API REQUEST"
+key = "YOUR API TOKEN"
+
+seven_wonders_locations = seven_wonders.map do |wonder|
+  # Code to discover the locations of each wonder.
+  
+end
 
 
 
