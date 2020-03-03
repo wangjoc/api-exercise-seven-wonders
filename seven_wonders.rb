@@ -15,7 +15,7 @@ def find_seven_wonders
 
   seven_wonders.each do |wonder|
     sleep(0.5)
-    seven_wonders_locations << get_coordinates(wonder)
+    seven_wonders_locations << get_location(wonder)
   end
 
   return seven_wonders_locations
