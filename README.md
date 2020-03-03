@@ -37,9 +37,9 @@ Go to their website and create a free account.
 
 Then, find your user dashboard, and look for Geocoding. You'll find a **token** somewhere. Use this token as your Location IQ API Key.
 
-### Implement `get_coordinates`
+### Implement `get_location`
 
-`get_coordinates` is a method that takes in one `search_term` query and returns a hash in the form of `{ original location name => { :lat => "99.99", :lon => "99.99"}}`
+`get_location` is a method that takes in one `search_term` query and returns a hash in the form of `{ original location name => { :lat => "99.99", :lon => "99.99"}}`
 
 For example, if the passed in `search_term` is `"Great Pyramid of Giza"`, then the output should be
 
