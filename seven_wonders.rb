@@ -12,7 +12,6 @@ require 'pry'
 BASE_URL = "https://us1.locationiq.com/v1/search.php?"
 REVERSE_URL = "https://us1.locationiq.com/v1/reverse.php?"
 DIRECTION_URL = "https://us1.locationiq.com/v1/directions/driving/"
-LOCATION_IQ_KEY = "0ed5de1aeca17c"
 
 
 
